@@ -1,0 +1,21 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: discovery
+
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    register-with-eureka: false #eureka doesnot need to register with itself, if other has to register than tur
+#    fetch-registry: false # same applied here
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#server:
+#  port: 8761
+#
+##  eureka to read the config from config-server
+#spring:
+#  config:
+#    import: optional:configserver:http://localhost:8888
